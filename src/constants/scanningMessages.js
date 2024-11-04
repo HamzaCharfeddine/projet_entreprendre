@@ -1,0 +1,17 @@
+export const scanningMessages = [
+    'Initiating security scan...',
+    'Examining scripts and libraries...',
+    'Analyzing web server configuration...',
+    'Analyzing SSL certificates...',
+    'Scanning for open ports...',
+    'Examining cookie security...',
+    'Assessing input validation...',
+    'Evaluating authentication mechanisms...',
+    'Analyzing database connections...',
+    'Examining session management...',
+    'Checking for cross-site scripting (XSS)...',
+    'Analyzing server-side validation...',
+    'Scanning for SQL injection...',
+    'Analyzing encryption usage...',
+    'Compiling vulnerability report...',
+];
