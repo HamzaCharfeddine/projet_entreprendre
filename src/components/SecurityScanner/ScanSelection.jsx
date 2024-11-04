@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const ScanSelection = ({
-                                  scanTokens,
                                   selectedType,
                                   setSelectedType,
                                   inputUrl,
@@ -21,10 +20,6 @@ export const ScanSelection = ({
     return (
         <div>
             <h1 style={{ color: '#1e40af', marginBottom: '20px' }}>SaaSpect</h1>
-            <p style={{ marginBottom: '20px', fontWeight: 'bold' }}>
-                Scan Tokens Remaining:{' '}
-                <span style={{ color: '#2563eb' }}>{scanTokens}</span>
-            </p>
 
             <div style={{ marginBottom: '20px' }}>
                 <div style={{ marginBottom: '10px', fontWeight: 'bold' }}>

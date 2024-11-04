@@ -10,7 +10,6 @@ import './style.css';
 
 export function App() {
     const [stage, setStage] = useState('selection');
-    const [scanTokens, setScanTokens] = useState(5);
     const [scanProgress, setScanProgress] = useState(0);
     const [scanningMessage, setScanningMessage] = useState('');
     const [selectedType, setSelectedType] = useState('');
@@ -51,25 +50,16 @@ export function App() {
         };
     }, [stage]);
 
-    const handleStartScan = () => {
-        if (scanTokens > 0) {
-            setScanTokens(prev => prev - 1);
-            setStage('scanning');
-        } else {
-            alert('No scan tokens remaining. Please upgrade.');
-        }
-    };
+
 
     if (stage === 'selection') {
         return (
             <div style={styles.container}>
                 <ScanSelection
-                    scanTokens={scanTokens}
                     selectedType={selectedType}
                     setSelectedType={setSelectedType}
                     inputUrl={inputUrl}
                     setInputUrl={setInputUrl}
-                    handleStartScan={handleStartScan}
                 />
             </div>
         );
