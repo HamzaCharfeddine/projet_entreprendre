@@ -50,7 +50,9 @@ export function App() {
         };
     }, [stage]);
 
-
+    const handleStartScan = () => {
+            setStage('scanning');
+    };
 
     if (stage === 'selection') {
         return (
@@ -60,6 +62,7 @@ export function App() {
                     setSelectedType={setSelectedType}
                     inputUrl={inputUrl}
                     setInputUrl={setInputUrl}
+                    handleStartScan={handleStartScan}
                 />
             </div>
         );
